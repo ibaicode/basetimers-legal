@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BaseTimers — Política de privacidad y avisos</title>
+  <meta name="description" content="Política de privacidad y avisos legales de la app de Android BaseTimers.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; color: #111; }
+    .wrap { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem; }
+    h1 { font-size: 1.75rem; }
+    h2 { margin-top: 2rem; }
+    p, li { line-height: 1.6; }
+    .lang-switch { font-size: 0.9rem; margin: 0.5rem 0 1rem; }
+    .card { border: 1px solid #e2e2e2; border-radius: 1rem; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+    .btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 999px; background: #0f766e; color: #fff; text-decoration: none; font-weight: 600; }
+    .btn:hover { background: #115e59; }
+    .muted { color: #555; font-size: 0.9rem; }
+    .toc { padding-left: 1rem; }
+    .toc a { color: #0f766e; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    footer { border-top: 1px solid #e5e5e5; margin-top: 2rem; padding-top: 1rem; color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="lang-switch">
+      <strong>Idioma / Language:</strong>
+      <a href="index.html">Español</a> ·
+      <a href="en.html">English</a>
+    </p>
+    <h1>Política de privacidad y avisos</h1>
+    <p>BaseTimers es una app de Android que muestra, en un widget, cuánto queda de tus mejoras del juego <strong>Clash of Clans</strong> a partir del JSON que tú mismo exportas. Ese JSON se guarda <strong>solo en tu teléfono</strong>.</p>
+    <p class="muted">No hay cuentas, ni registro, ni bases de datos propias, ni analítica.</p>
+    <div class="card">
+      <ol class="toc">
+        <li><a href="#datos">Qué datos usa la app</a></li>
+        <li><a href="#ads">Anuncios y consentimiento</a></li>
+        <li><a href="#premium">Compra Premium</a></li>
+        <li><a href="#permisos">Permisos</a></li>
+        <li><a href="#retencion">Conservación y borrado</a></li>
+        <li><a href="#menores">Menores</a></li>
+        <li><a href="#contacto">Contacto y derechos</a></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2 id="datos">1. Qué datos usa la app</h2>
+      <p>BaseTimers funciona casi siempre <strong>offline</strong>. El export de tu aldea (el JSON del juego) lo pegas tú a mano. La app lo guarda en <code>SharedPreferences</code> privadas del móvil:</p>
+      <ul>
+        <li>El nombre de la aldea y su export JSON.</li>
+        <li>Ajustes de la app y del widget, avisos y el idioma elegido.</li>
+        <li>Un pequeño historial (solo local) del uso de anuncios.</li>
+      </ul>
+      <p><strong>El app no sube ese JSON a ningún servidor</strong>, no lo comparte con otros apps, no lo usa para mejorar nada y no crea perfiles de usuario. Tampoco usamos el portapapeles si no lo activas tú.</p>
+      <p>Hacemos lo contrario de “acceder a tu cuenta”: la app no inicia sesión en el juego, no lee ni escribe datos fuera de su propio almacenamiento.</p>
+      <div class="muted">Con el ajuste <strong>allowBackup=false</strong>, además, <strong>no</strong> se hace copia de seguridad en la nube ni transferencia automática a otros dispositivos.</div>
+    </div>
+    <div class="card">
+      <h2 id="ads">2. Anuncios y consentimiento</h2>
+      <p>La app es gratis y se sostiene con <strong>publicidad de Google AdMob</strong> (App Open e interstitials) cuando la abres o cuando pegas un JSON nuevo. Antes de pedir ningún anuncio usamos el formulario de <strong>user consent UMP</strong> de Google (GDPR/CCPA), donde puedes elegir entre:</p>
+      <ul>
+        <li><strong>Anuncios personalizados</strong>: Google/AdMob puede usar datos como tu ID de publicidad, información técnica del dispositivo o la IP para elegir el anuncio.</li>
+        <li><strong>Anuncios no personalizados</strong>: el anuncio se sirve con menos datos, normalmente por contexto (idioma, pantalla, editorial, etc.).</li>
+        <li><strong>No consentido</strong>: no se piden anuncios.</li>
+      </ul>
+      <p>Puedes revisar o cambiar esa elección en <strong>Ajustes → Anuncios</strong> (o el formulario de privacidad que se vuelve a abrir la próxima vez que abres la app). Google trata esos datos como proveedor; su política es la que manda sobre ese procesamiento.</p>
+      <p>BaseTimers no envía a AdMob ningún dato de tu aldea, ni correos, ni identificadores permanentes propios.</p>
+    </div>
+    <div class="card">
+      <h2 id="premium">3. Compra Premium</h2>
+      <p>La compra Premium (“<strong>Sin anuncios</strong>”) es un pago único en Google Play. La validación y la restauración las hace <strong>RevenueCat</strong>, como servicio de compras. Puede leer el estado de tu compra y darte la “restauración” en otro móvil. Google/Play es quien procesa el pago y puede guardar los datos de transacción según su Política de Privacidad.</p>
+      <p>No guardamos tarjetas ni datos bancarios: eso queda en Google Play.</p>
+    </div>
+    <div class="card">
+      <h2 id="permisos">4. Permisos</h2>
+      <p>Los permisos que pedimos son los mínimos:</p>
+      <ul>
+        <li><strong>INTERNET</strong>: para los anuncios de AdMob y la compra de Premium.</li>
+        <li><strong>BILLING</strong>: para la compra en Google Play.</li>
+        <li><strong>POST_NOTIFICATIONS</strong>: para avisarte de que una mejora va a terminar.</li>
+        <li><strong>SCHEDULE_EXACT_ALARM</strong>: opcional, para que el aviso caiga en el minuto exacto que marques; sin él el aviso puede llegar con unos minutos de margen.</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong>: para reponer los avisos al reiniciar el móvil.</li>
+      </ul>
+      <p>No pedimos cámara, micrófono, contactos, SMS ni localización.</p>
+    </div>
+    <div class="card">
+      <h2 id="retencion">5. Conservación y borrado</h2>
+      <ul>
+        <li>Tus aldeas y ajustes se guardan en el móvil hasta que las borres tú, limpies los datos de la app o la desinstales.</li>
+        <li>El historial de anuncios es local y se recorta a unos pocos días.</li>
+        <li>La compra/entitlement queda en Google/RevenueCat, no en la app; pedirla de tu cuenta de Google equivale a borrarla de tu lado.</li>
+      </ul>
+      <p>No existe una cuenta que “borrar”: si quieres que dejemos de procesar algo, borra la aldea o escribe al contacto de abajo.</p>
+    </div>
+    <div class="card">
+      <h2 id="menores">6. Menores</h2>
+      <p>BaseTimers <strong>no</strong> está dirigida a menores de 13 años. No intentamos atraer a ese público y no usamos anuncios con ese objetivo. Si detectas un uso en ese rango, bórrala o contacta.</p>
+    </div>
+    <div class="card">
+      <h2 id="contacto">7. Contacto, derechos y cambios</h2>
+      <p>Puedes pedir copia, corrección, borrado o explicación sobre cómo se procesa en la app escribiendo a: <strong><a href="mailto:basetimers.app@gmail.com">basetimers.app@gmail.com</a></strong>.</p>
+      <p>Como no guardamos cuentas, no existe un “portal de borrado” distinto de la propia app; la borración de aldeas o datos se hace desde el propio teléfono.</p>
+      <p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con su fecha.</p>
+    </div>
+    <div class="card">
+      <h2 id="legal">Avisos legales</h2>
+      <ul>
+        <li><strong>Clash of Clans</strong> y sus nombres/marcas pertenecen a Supercell. BaseTimers no está afiliada a Supercell ni respaldada por ella.</li>
+        <li>La app solo lee el JSON que el usuario exporta del juego; muestra nombres del juego, sin usar arte ni logos de Supercell.</li>
+        <li>Servicios de terceros usados por la app: <strong>Google AdMob</strong> (anuncios), <strong>Google Play Billing</strong> (compras), <strong>RevenueCat</strong> (entitlement de compra), <strong>AndroidX / Material / Glance</strong> (UI), <strong>kotlinx.serialization / Gson</strong> (JSON local), <strong>UMP</strong> (consentimiento).</li>
+      </ul>
+    </div>
+    <footer>
+      <p>Última actualización: <strong>2026-10-25</strong>.</p>
+      <p>Contacto: <a href="mailto:basetimers.app@gmail.com">basetimers.app@gmail.com</a> · Ibaicode, España.</p>
+      <p class="muted">Este documento no es un repositorio de código. Solo explica legalmente cómo funciona la app.</p>
+    </footer>
+  </div>
+</body>
+</html>

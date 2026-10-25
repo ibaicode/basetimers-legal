@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BaseTimers — Privacy policy and notices</title>
+  <meta name="description" content="Privacy policy and legal notices for the BaseTimers Android app.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; color: #111; }
+    .wrap { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem; }
+    h1 { font-size: 1.75rem; }
+    h2 { margin-top: 2rem; }
+    p, li { line-height: 1.6; }
+    .lang-switch { font-size: 0.9rem; margin: 0.5rem 0 1rem; }
+    .card { border: 1px solid #e2e2e2; border-radius: 1rem; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+    .btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 999px; background: #0f766e; color: #fff; text-decoration: none; font-weight: 600; }
+    .btn:hover { background: #115e59; }
+    .muted { color: #555; font-size: 0.9rem; }
+    .toc { padding-left: 1rem; }
+    .toc a { color: #0f766e; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    footer { border-top: 1px solid #e5e5e5; margin-top: 2rem; padding-top: 1rem; color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="lang-switch">
+      <strong>Idioma / Language:</strong>
+      <a href="index.html">Español</a> ·
+      <a href="en.html">English</a>
+    </p>
+    <h1>Privacy policy and notices</h1>
+    <p>BaseTimers is an Android widget that shows how much time is left on your <strong>Clash of Clans</strong> upgrades, using the JSON that you export yourself. That JSON stays <strong>on your phone</strong>.</p>
+    <p class="muted">There are no accounts, no sign-in, no own backends, no analytics.</p>
+    <div class="card">
+      <ol class="toc">
+        <li><a href="#data">What the app uses</a></li>
+        <li><a href="#ads">Ads and consent</a></li>
+        <li><a href="#premium">Premium purchase</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#minors">Minors</a></li>
+        <li><a href="#contact">Contact and rights</a></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2 id="data">1. What the app uses</h2>
+      <p>BaseTimers works essentially <strong>offline</strong>. You paste the game’s village export JSON yourself. The app stores it in private <code>SharedPreferences</code> on your device:</p>
+      <ul>
+        <li>The village name and its exported JSON.</li>
+        <li>Your app/widget preferences, alerts and chosen language.</li>
+        <li>A small local history of ad usage.</li>
+      </ul>
+      <p><strong>The app does not upload that JSON to any server</strong>, doesn’t share it with other apps, doesn’t use it to build profiles. It also never reads your clipboard unless you ask it to.</p>
+      <p>It is the opposite of “accessing your account”: the app never signs in to the game and never reads or writes data outside its own storage.</p>
+      <p class="muted">With <strong>allowBackup=false</strong>, there is also <strong>no</strong> cloud backup or automatic transfer to other devices.</p>
+    </div>
+    <div class="card">
+      <h2 id="ads">2. Ads and consent</h2>
+      <p>BaseTimers is free and is funded by <strong>Google AdMob</strong> ads (app-open and interstitials) when you open the app or paste a new JSON. Before any ad is requested, we use Google’s <strong>UMP user consent</strong> form (GDPR/CCPA), where you can choose between:</p>
+      <ul>
+        <li><strong>Personalised ads</strong>: Google/AdMob may use things like your advertising ID, device information or IP to pick an ad.</li>
+        <li><strong>Non-personalised ads</strong>: the ad is served with less data, normally by context (language, screen, publisher, etc.).</li>
+        <li><strong>Not consented</strong>: no ads are requested.</li>
+      </ul>
+      <p>You can review or change that choice in <strong>Settings → Ads</strong>, or the privacy form that opens the next time you use the app. Google handles that processing; their policy governs it.</p>
+      <p>BaseTimers does not send your village JSON, emails, or any permanent in-app identifier to AdMob.</p>
+    </div>
+    <div class="card">
+      <h2 id="premium">3. Premium purchase</h2>
+      <p>Premium (“<strong>no ads</strong>”) is a one-time purchase on Google Play. Validation and restore are handled by <strong>RevenueCat</strong> as the purchase/entitlement service. Google/Play processes the payment and may keep transaction data under their own Privacy Policy.</p>
+      <p>We never store card or bank details: that stays with Google Play.</p>
+    </div>
+    <div class="card">
+      <h2 id="permissions">4. Permissions</h2>
+      <p>The permissions we ask for are minimal:</p>
+      <ul>
+        <li><strong>INTERNET</strong>: for AdMob ads and Premium purchase.</li>
+        <li><strong>BILLING</strong>: to buy on Google Play.</li>
+        <li><strong>POST_NOTIFICATIONS</strong>: to warn you when an upgrade is about to finish.</li>
+        <li><strong>SCHEDULE_EXACT_ALARM</strong>: optional, to fire the alert on the exact minute you chose; without it the alert can arrive a few minutes later.</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong>: to rearm alerts after a device restart.</li>
+      </ul>
+      <p>We do not ask for camera, microphone, contacts, SMS or location.</p>
+    </div>
+    <div class="card">
+      <h2 id="retention">5. Retention and deletion</h2>
+      <ul>
+        <li>Your villages and settings stay on your phone until you delete them, clear app data or uninstall.</li>
+        <li>The ad history is local and trimmed to a few days.</li>
+        <li>The purchase/entitlement lives with Google/RevenueCat, not with the app; asking Google to remove that from your account is how you remove it on your side.</li>
+      </ul>
+      <p>There is no “account” to delete: if you want anything to stop being processed, delete the village or contact us below.</p>
+    </div>
+    <div class="card">
+      <h2 id="minors">6. Minors</h2>
+      <p>BaseTimers is <strong>not</strong> directed at children under 13. We don’t try to attract that audience and we don’t serve ads aiming at them. If you spot such usage, delete the village or contact us.</p>
+    </div>
+    <div class="card">
+      <h2 id="contact">7. Contact, rights and changes</h2>
+      <p>You can ask for a copy, correction, deletion, or an explanation about how the app processes data by writing to: <strong><a href="mailto:basetimers.app@gmail.com">basetimers.app@gmail.com</a></strong>.</p>
+      <p>Since we don’t keep accounts, there is no separate “deletion portal” beyond the app itself; deleting a village or your data is done from your phone.</p>
+      <p>If this policy changes, the new version will be published on this same page with its date.</p>
+    </div>
+    <div class="card">
+      <h2 id="legal">Legal notices</h2>
+      <ul>
+        <li><strong>Clash of Clans</strong> and its names/marks belong to Supercell. BaseTimers is not affiliated with, endorsed by or sponsored by Supercell.</li>
+        <li>The app only reads the JSON the user exports from the game; it shows the game’s names and doesn’t use Supercell art or logos.</li>
+        <li>Third-party services used by the app: <strong>Google AdMob</strong> (ads), <strong>Google Play Billing</strong> (purchases), <strong>RevenueCat</strong> (purchase/entitlement), <strong>AndroidX / Material / Glance</strong> (UI), <strong>kotlinx.serialization / Gson</strong> (local JSON), <strong>UMP</strong> (consent).</li>
+      </ul>
+    </div>
+    <footer>
+      <p>Last updated: <strong>2026-10-25</strong>.</p>
+      <p>Contact: <a href="mailto:basetimers.app@gmail.com">basetimers.app@gmail.com</a> · Ibaicode, Spain.</p>
+      <p class="muted">This document is not a code repository. It only explains how the app operates legally.</p>
+    </footer>
+  </div>
+</body>
+</html>
